@@ -1,6 +1,10 @@
 # iReboot
 iReboot is a little raspberry project to pilote a robot. We design this project with a friend during our engineer school. The robot is remote by iOS in Wifi.
 
+<video src=“img/video.mov” controls> 
+   Your browser does not implement html5 video. 
+</ video>
+
 ##Architecture
 The project is very simple : the nodeJS server is running on a Raspberry-pi. Motors are remoted using the gpio of the rasp.
 
