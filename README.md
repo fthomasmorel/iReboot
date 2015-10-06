@@ -1,6 +1,8 @@
 # iReboot
 iReboot is a little raspberry project to pilote a robot. We design this project with a friend during our engineer school. The robot is remote by iOS in Wifi.
 
+![Demo](img.demo.gif)
+
 ##Architecture
 The project is very simple : the nodeJS server is running on a Raspberry-pi. Motors are remoted using the gpio of the rasp.
 
@@ -26,14 +28,14 @@ We have to create a crontab to run the server and everything. Since we have a pr
 Also don't forget to create a folder "log" at yout home path.
 
 ```
-@reboot sudo service isc-dhcp-server start 
+@reboot sudo service isc-dhcp-server start
 @reboot sudo sh /home/pi/initGpio.sh > /home/pi/log/log
 @reboot sudo node /home/pi/nodeJS/server.js >/home/pi/log/node_log
 
 ```
 
 ##NodeJS
-In the NodeJS part there are two parts : 
+In the NodeJS part there are two parts :
 
 ###The server part
 
